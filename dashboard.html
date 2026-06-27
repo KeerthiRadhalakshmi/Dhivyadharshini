@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Recruiter Dashboard - SmartHire</title>
+<title>Admin Dashboard - SmartHire</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -31,7 +31,6 @@ SmartHire
 Logout
 </a>
 
-
 </div>
 
 </nav>
@@ -42,24 +41,24 @@ Logout
 
 
 <h2>
-Welcome Recruiter 👋
+Welcome Admin 👋
 </h2>
+
 
 
 <div class="row mt-4">
 
 
-
 <div class="col-md-3">
 
 <div class="card shadow p-3">
 
 <h4>
-Jobs Posted
+Total Users
 </h4>
 
 <h2>
-10
+250
 </h2>
 
 </div>
@@ -68,16 +67,17 @@ Jobs Posted
 
 
 
+
 <div class="col-md-3">
 
 <div class="card shadow p-3">
 
 <h4>
-Applicants
+Candidates
 </h4>
 
 <h2>
-45
+180
 </h2>
 
 </div>
@@ -86,16 +86,17 @@ Applicants
 
 
 
+
 <div class="col-md-3">
 
 <div class="card shadow p-3">
 
 <h4>
-Shortlisted
+Recruiters
 </h4>
 
 <h2>
-15
+70
 </h2>
 
 </div>
@@ -104,21 +105,18 @@ Shortlisted
 
 
 
+
 <div class="col-md-3">
 
 <div class="card shadow p-3">
 
 <h4>
-AI Screening
+Active Jobs
 </h4>
 
-<p>
-Resume ranking system
-</p>
-
-<button class="btn btn-primary">
-Open AI Tool
-</button>
+<h2>
+95
+</h2>
 
 </div>
 
@@ -135,22 +133,88 @@ Open AI Tool
 
 
 <h3>
-Post New Job
+User Management
 </h3>
 
 
-<input class="form-control mb-3" placeholder="Job Title">
+<table class="table table-bordered mt-3">
 
 
-<input class="form-control mb-3" placeholder="Required Skills">
+<tr>
+
+<th>
+User Name
+</th>
+
+<th>
+Role
+</th>
+
+<th>
+Status
+</th>
+
+<th>
+Action
+</th>
+
+</tr>
 
 
-<textarea class="form-control mb-3" placeholder="Job Description"></textarea>
 
+<tr>
 
-<button class="btn btn-primary">
-Post Job
+<td>
+John Smith
+</td>
+
+<td>
+Candidate
+</td>
+
+<td>
+Active
+</td>
+
+<td>
+
+<button class="btn btn-danger btn-sm">
+Block
 </button>
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+ABC Technologies
+</td>
+
+<td>
+Recruiter
+</td>
+
+<td>
+Active
+</td>
+
+<td>
+
+<button class="btn btn-danger btn-sm">
+Block
+</button>
+
+</td>
+
+</tr>
+
+
+
+</table>
 
 
 </div>
