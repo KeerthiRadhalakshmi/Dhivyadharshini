@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SmartHire Login</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<nav class="navbar navbar-dark bg-primary">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="index.html">
+SmartHire
+</a>
+
+</div>
+
+</nav>
+
+
+
+<div class="container mt-5">
+
+
+<div class="row justify-content-center">
+
+
+<div class="col-md-5">
+
+
+<div class="card shadow p-4">
+
+
+<h2 class="text-center mb-4">
+Login
+</h2>
+
+
+<form onsubmit="loginUser(event)">
+
+
+<div class="mb-3">
+
+<label>Email</label>
+
+<input type="email" class="form-control" placeholder="Enter Email">
+
+</div>
+
+
+
+<div class="mb-3">
+
+<label>Password</label>
+
+<input type="password" class="form-control" placeholder="Enter Password">
+
+</div>
+
+
+
+<div class="mb-3">
+
+<label>Select User Type</label>
+
+<select class="form-control">
+
+<option>Candidate</option>
+
+<option>Recruiter</option>
+
+<option>Admin</option>
+
+</select>
+
+</div>
+
+
+
+<div class="text-center">
+
+<button type="submit" class="btn btn-primary px-4 py-2 rounded">
+    Login
+</button>
+
+</div>
+</button>
+
+Login
+
+
+
+
+</form>
+
+
+<p class="text-center mt-3">
+
+Don't have an account?
+
+<a href="register.html">
+Register
+</a>
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+<script>
+
+function loginUser(event){
+
+    event.preventDefault();
+
+    let userType = document.querySelector("select").value;
+
+
+    if(userType == "Candidate"){
+
+        window.location.href = "candidate/dashboard.html";
+
+    }
+
+    else if(userType == "Recruiter"){
+
+        window.location.href = "recruiter/dashboard.html";
+
+    }
+
+    else if(userType == "Admin"){
+
+        window.location.href = "admin/dashboard.html";
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+</html>
